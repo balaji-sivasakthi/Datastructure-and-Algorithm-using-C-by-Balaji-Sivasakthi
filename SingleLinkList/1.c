@@ -27,10 +27,10 @@ int main(){
     head->link = second;
     //print the value for head
 
-    printf("%d\n",head->data);
+    printf("head->data   = %d\n",head->data);
   
     //print the value for second node
-    printf("%d\n",second->data);
+    printf("second->data = %d\n",second->data);
     
 
     return 0;
