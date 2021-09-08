@@ -15,14 +15,23 @@ int main(){
     head=(struct node*)malloc(sizeof(struct node));
     //assign value
     head->data=10;
-    head->link=(struct node*)malloc(sizeof(struct node));
+    head->link=NULL;
 
-    struct node *first = head->link;
-    first->data=20;
-    first->link=NULL;
+    //second node
+    struct node *second =(struct node*)malloc(sizeof(struct node));
+    //assign value
+    second->data=20;
+    second->link=NULL;
 
-    //print the value
-    printf("%d",first->data);
+    //connect head to second node
+    head->link = second;
+    //print the value for head
+
+    printf("%d\n",head->data);
+  
+    //print the value for second node
+    printf("%d\n",second->data);
+    
 
     return 0;
 }
