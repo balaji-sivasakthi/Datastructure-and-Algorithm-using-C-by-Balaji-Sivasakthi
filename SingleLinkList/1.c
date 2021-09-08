@@ -16,12 +16,12 @@ int main(){
     //assign value
     head->data=10;
     head->link=(struct node*)malloc(sizeof(struct node));
-    
+
     struct node *first = head->link;
     first->data=20;
     first->link=NULL;
 
-    //print the vale
+    //print the value
     printf("%d",first->data);
 
     return 0;
